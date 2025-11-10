@@ -73,3 +73,35 @@ graph TD
  - Compute and visualize differences between predicted and actual values
  - Analyze error patterns to validate model adequacy
 
+# Results & Output
+
+### Optimization Progress
+The multi-stage optimization successfully converged to the following parameters:
+
+![Optimization Console Output](images/optimization_output.png)
+*Console output showing optimization progress and final parameters*
+
+### Final Optimized Parameters
+- **θ** = 21.21124° (0.37021 radians)
+- **M** = 0.021189
+- **X** = 54.9008
+- **L1 Loss** = 37865.0938
+
+## Visualization Results
+
+# Curve Fitting Quality and Residual Analysis
+![Fit Quality Visualization](images/output_curve_fit.png)
+*Comparison between actual data points (blue) and fitted curve (green)*
+
+
+
+### Performance Metrics
+
+| Metric | Value |
+|--------|-------|
+| Final L1 Loss | 37865.09 |
+| θ (Angle) | 21.21124° |
+| M (Exponential Factor) | 0.021189 |
+| X (Offset) | 54.9008 |
+| Optimization Method | Hybrid (Multi-start + Dual Annealing) |
+
