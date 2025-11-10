@@ -39,3 +39,37 @@ graph TD
     D --> E[Final Refinement]
     E --> F[Results & Visualization]
     F --> G[Residual Analysis]
+```
+
+1. Raw Data Loading
+ - Load (x,y) coordinate data from the given CSV file
+ - Parameterize the curve using time variable t spanning 6 to 60 units
+ - Prepare ground truth data for optimization comparison
+
+2. Model Definition
+ - Define nonlinear mathematical model with parameters θ (angle), M (exponential factor), and X (offset) as given in the problem statement
+
+3. Multi-Start Local Optimization
+ - Execute L-BFGS-B algorithm from multiple initial parameter guesses
+ - Grid search across θ, M and X
+ - This helps identify promising regions in parameter space and avoiding local minimas
+
+4. Dual Annealing Global Search
+ - Apply global optimization using simulated annealing
+ - Helps escape local minimas
+ - Explores entire parameter space within defined physical bounds
+
+5. Final Refinement
+ - Take best solution from previous stages for improving precision
+ - Use L-BFGS-B with tolerance (1e-15) for final convergence
+ - This ensures high-precision parameter estimates
+
+6. Results & Visualization
+ - Generate comparative plots of fitted vs actual curves
+ - Display optimization results with final parameter values
+ - Provide quantitative loss metrics 
+
+7. Residual Analysis
+ - Compute and visualize differences between predicted and actual values
+ - Analyze error patterns to validate model adequacy
+
