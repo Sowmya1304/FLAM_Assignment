@@ -90,7 +90,7 @@ The multi-stage optimization successfully converged to the following parameters:
 ## Visualization Results
 
 ### Curve Fitting Quality and Residual Analysis
-![Fit Quality Visualization](images/output_curve_fit.png)
+![Fit Quality Visualization](images/output_curve_fitting.png)
 *Comparison between actual data points (blue) and fitted curve (green)*
 
 
