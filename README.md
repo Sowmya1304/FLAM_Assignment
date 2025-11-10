@@ -105,3 +105,10 @@ The multi-stage optimization successfully converged to the following parameters:
 | X (Offset) | 54.9008 |
 | Optimization Method | Hybrid (Multi-start + Dual Annealing) |
 
+
+## References 
+1. Virtanen, P., et al. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. *Nature Methods*, 17(3), 261-272.
+2. [Scipy Dual Annealing Documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html)
+3. [Multi-start Methods Overview](https://en.wikipedia.org/wiki/Multi-start_method)
+4. [L1 vs L2 Regularization Comparison](https://towardsdatascience.com/l1-and-l2-regularization-methods-ce25e7fc831c)
+
