@@ -26,3 +26,16 @@ Subject to boundary conditions:
 - $\theta \in [0, 50^\circ]$
 - $M \in [-0.05, 0.05]$
 - $X \in [0, 100]$
+
+# Solution Approach
+
+The parameter estimation follows a multi-stage optimization pipeline to overcome local minima and ensure robust convergence to the global optimum.
+
+```mermaid
+graph TD
+    A[Raw Data Loading] --> B[Model Definition]
+    B --> C[Multi-Start Local Optimization]
+    C --> D[Dual Annealing Global Search]
+    D --> E[Final Refinement]
+    E --> F[Results & Visualization]
+    F --> G[Residual Analysis]
