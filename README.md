@@ -15,8 +15,14 @@ $$
 y(t) = 42 + t \cdot \sin(\theta) + e^{M \cdot |t|} \cdot \sin(0.3t) \cdot \cos(\theta)
 $$
 
-Where:
-- $\theta$: Angle parameter (radians)
-- $M$: Exponential growth factor
-- $X$: Horizontal offset
-- $t$: Time parameter
+# Optimization Objective: 
+Minimize the L1 loss function:
+
+$$
+\mathcal{L}(\theta, M, X) = \sum_{i=1}^{n} |x_{\text{pred},i} - x_{\text{true},i}| + |y_{\text{pred},i} - y_{\text{true},i}|
+$$
+
+Subject to boundary conditions:
+- $\theta \in [0, 50^\circ]$
+- $M \in [-0.05, 0.05]$
+- $X \in [0, 100]$
