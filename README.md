@@ -78,7 +78,7 @@ graph TD
 ### Optimization Progress
 The multi-stage optimization successfully converged to the following parameters:
 
-![Optimization Console Output](images/optimization_output.png)
+![Optimization Console Output](images/console_output_curve_fitting.png)
 *Console output showing optimization progress and final parameters*
 
 ### Final Optimized Parameters
