@@ -16,7 +16,7 @@ y(t) = 42 + t \cdot \sin(\theta) + e^{M \cdot |t|} \cdot \sin(0.3t) \cdot \cos(\
 $$
 
 # Objective: 
-Finding the L1 loss function between true data and predicted values:
+Finding the L1 distance between true data and predicted values:
 
 $$
 \mathcal{L}(\theta, M, X) = \sum_{i=1}^{n} |x_{\text{pred},i} - x_{\text{true},i}| + |y_{\text{pred},i} - y_{\text{true},i}|
